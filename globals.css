@@ -1,0 +1,26 @@
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Inter, system-ui, sans-serif; color: #0a0a0a; background: #ffffff; }
+a { color: inherit; text-decoration: none; }
+details summary { cursor: pointer; list-style: none; }
+details summary::-webkit-details-marker { display: none; }
+img { max-width: 100%; }
+
+/* ---------- Celular e telas pequenas ---------- */
+@media (max-width: 760px) {
+  header nav a:not(:last-child) { display: none; }
+  header { justify-content: space-between !important; flex-wrap: nowrap !important; }
+  h1[style*="font-size:58px"] { font-size: 36px !important; letter-spacing: -1px !important; }
+  h2[style*="font-size:38px"] { font-size: 28px !important; }
+  section[style*="padding:88px"] { padding-top: 56px !important; padding-left: 20px !important; padding-right: 20px !important; }
+  [style*="padding:64px 24px 40px"] { padding-top: 40px !important; }
+  p[style*="font-size:20px"] { font-size: 17px !important; }
+  /* grade de canais: 2 colunas */
+  [style*="repeat(5,1fr)"] { grid-template-columns: repeat(2, 1fr) !important; }
+  /* mockup do painel: só a conversa */
+  [style*="flex:0 0 112px"], [style*="flex:0 0 190px"] { display: none !important; }
+  /* cartões e blocos largos */
+  [style*="padding:36px 32px 32px"] { padding: 32px 22px 24px !important; }
+  [style*="font-size:44px"] { font-size: 38px !important; }
+  footer { flex-direction: column; align-items: flex-start !important; gap: 12px !important; }
+  [style*="margin-top:56px;border:1px solid #e4e4e7"]{display:none !important}
+}
