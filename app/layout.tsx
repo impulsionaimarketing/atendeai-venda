@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Atende Aí — Agentes de IA no WhatsApp",
+  title: "Atende Aí — Todos os seus atendimentos num painel só, com IA",
   description:
-    "Agentes de IA que atendem seus clientes no WhatsApp 24 horas, com todos os canais de atendimento num painel só.",
+    "Centralize WhatsApps, Instagram, Mercado Livre e mais num painel só, com IA atendendo 24 horas e integração por API.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
